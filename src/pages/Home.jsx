@@ -1,6 +1,5 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import hero from "../assets/hero.jpg";
-import base from "../assets/base.jpg";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
@@ -12,19 +11,20 @@ export default function Home() {
       {/* top image */}
       <Box w="100%" position="relative">
         <Image
-          loading="lazy"
-          display={{ base: "none", md: "flex" }}
           w="100%"
+          h="70vh"
           src={hero}
+          objectFit="cover"
           alt="hero"
+          loading="lazy"
         />
 
         <Box
           position="absolute"
-          top="40%"
-          left="28%"
-          transform="translate(-50%, -50%)"
-          display={{ base: "none", md: "flex" }}
+          top="25%"
+          left={{ base: "10", md: "20" }}
+          textAlign="left"
+          color="#f2f2f2"
         >
           <Box>
             <Text>Nike Invincible</Text>
@@ -42,60 +42,26 @@ export default function Home() {
               the <u>Nike Invincible.</u>
             </Text>
             <Button
-              letterSpacing="0.5px"
-              mt="5"
-              bg="black"
+              mt="8"
+              bg="#f2f2f2"
               px="8"
-              _hover={{ bg: "#444444" }}
-              color="#ffffff"
+              _hover={{ bg: "#d4e9ff" }}
+              color="black"
               rounded="full"
+              fontWeight="500"
             >
               Shop Now
             </Button>
           </Box>
-        </Box>
-
-        <Box display={{ base: "flex", md: "none" }}>
-          <Image loading="lazy" src={base} alt="base-hero" />
-        </Box>
-      </Box>
-
-      {/* top for small screen */}
-
-      <Box display={{ base: "flex", md: "none" }} w="90%" m="auto" mt="5">
-        <Box>
-          <Text>Nike Invincible</Text>
-          <Heading
-            fontFamily={"Bebas Neue"}
-            letterSpacing="2px"
-            textTransform="uppercase"
-            fontWeight="700"
-            fontSize={{ base: "35px", md: "60px" }}
-          >
-            Feel It to Believe It
-          </Heading>
-          <Text>
-            Introducing Lightweight ZoomX cushioning through every mile-run in
-            the <u>Nike Invincible.</u>
-          </Text>
-          <Button
-            mt="5"
-            bg="black"
-            px="8"
-            _hover={{ bg: "#444444" }}
-            color="#ffffff"
-            rounded="full"
-            fontWeight="500"
-          >
-            Shop Now
-          </Button>
         </Box>
       </Box>
 
       {/* Nike x PSG */}
 
       <Box m="auto" mt="16" w="90%">
-        <Text fontSize="20" fontWeight="500">The Latest</Text>
+        <Text fontSize="20" fontWeight="500">
+          The Latest
+        </Text>
 
         <Flex gap="5" mt="2" flexDirection={{ base: "column", md: "row" }}>
           <Box w={{ base: "100%", md: "55%" }}>
@@ -157,7 +123,9 @@ export default function Home() {
       {/* Nike x Lebron */}
 
       <Box m="auto" mt="16" w="90%">
-        <Text fontSize="20" fontWeight="500">Featured</Text>
+        <Text fontSize="20" fontWeight="500">
+          Featured
+        </Text>
 
         <Flex
           flexDirection={{ base: "column", md: "row" }}
@@ -220,7 +188,9 @@ export default function Home() {
       {/* men women shoes */}
 
       <Box w="90%" m="auto" mt="20">
-        <Text fontSize="20" fontWeight="500">More From Nike</Text>
+        <Text fontSize="20" fontWeight="500">
+          More From Nike
+        </Text>
 
         <Flex gap="5" mt="2" flexDirection={{ base: "column", md: "row" }}>
           <Box w="100%" position="relative">
