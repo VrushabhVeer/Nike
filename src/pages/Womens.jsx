@@ -21,7 +21,12 @@ const Womens = () => {
     }, []);
 
     if (loading) {
-        return <Loading />;
+        return (
+            <>
+                <Navbar2 />
+                <Loading />
+            </>
+        );
     }
     return (
         <>
@@ -31,7 +36,7 @@ const Womens = () => {
                     {data.map((item, index) => (
                         <Box key={index}>
                             <Box>
-                                <Image src={item.img1} alt="productImg" loading="lazy"/>
+                                <Image src={item.img1} alt="product_img" loading="lazy"/>
                             </Box>
 
                             <Box mt="3">

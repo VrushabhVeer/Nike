@@ -12,7 +12,7 @@ export default function Home() {
       <Box w="100%" position="relative">
         <Image
           w="100%"
-          h="70vh"
+          h="80vh"
           src={hero}
           objectFit="cover"
           alt="hero"
@@ -21,7 +21,7 @@ export default function Home() {
 
         <Box
           position="absolute"
-          top="25%"
+          top={{base:"60%", md:"25%"}}
           left={{ base: "10", md: "20" }}
           textAlign="left"
           color="#f2f2f2"
@@ -66,26 +66,26 @@ export default function Home() {
         <Flex gap="5" mt="2" flexDirection={{ base: "column", md: "row" }}>
           <Box w={{ base: "100%", md: "55%" }}>
             <Image
-              loading="lazy"
               w="100%"
               src="https://www.soccerbible.com/media/79991/nike-jordan-psg-soccerbible_0010_layer-1.jpg"
-              alt=""
+              alt="latest-1"
+              loading="lazy"
             />
           </Box>
 
           <Flex w={{ base: "100%", md: "45%" }} gap="5">
             <Box>
               <Image
-                loading="lazy"
                 src="https://www.soccerbible.com/media/80044/psg-jumpman-mbappe.jpg"
-                alt=""
+                alt="Latest-2"
+                loading="lazy"
               />
             </Box>
             <Box>
               <Image
-                loading="lazy"
                 src="https://www.soccerbible.com/media/80022/psg-jumpman-products-13.jpg"
-                alt=""
+                alt="Latest-3"
+                loading="lazy"
               />
             </Box>
           </Flex>
@@ -135,23 +135,23 @@ export default function Home() {
         >
           <Box>
             <Image
-              loading="lazy"
               src="https://cdn.dynamicyield.com/api/8766411/images/77ef0678fa06__0009_230110_shot_12_2189_v6.jpg"
-              alt=""
+              alt="featured-1"
+              loading="lazy"
             />
           </Box>
           <Box>
             <Image
-              loading="lazy"
               src="https://cdn.dynamicyield.com/api/8766411/images/1a2ccc0c11f56__0012_230110_shot_06_1384_v5.jpg"
-              alt=""
+              alt="featured-2"
+              loading="lazy"
             />
           </Box>
           <Box>
             <Image
-              loading="lazy"
               src="https://cdn.dynamicyield.com/api/8766411/images/212b07b4aafb5__0002_230110_shot_17_3494_mask_v3.jpg"
-              alt=""
+              alt="featured-3"
+              loading="lazy"
             />
           </Box>
         </Flex>
@@ -195,10 +195,10 @@ export default function Home() {
         <Flex gap="5" mt="2" flexDirection={{ base: "column", md: "row" }}>
           <Box w="100%" position="relative">
             <Image
-              loading="lazy"
               w="100%"
               src="https://static.nike.com/a/images/w_960,c_limit,f_auto/d7129660-b612-47dc-9940-b93bad521c78/nike-x-st%C3%BCssy-apparel-collection-release-date.png"
               alt="men"
+              loading="lazy"
             />
             <Box position="absolute" bottom="8" left="10">
               <Link to="/mens">
@@ -218,10 +218,10 @@ export default function Home() {
 
           <Box w="100%" position="relative">
             <Image
-              loading="lazy"
               w="100%"
               src="https://static.nike.com/a/images/w_960,c_limit,f_auto/c19c67ef-321c-4556-99c8-c997fd9b40db/nike-x-st%C3%BCssy-apparel-accessories-collection-release-date.jpg"
               alt="women"
+              loading="lazy"
             />
             <Box position="absolute" bottom="8" left="10">
               <Link to="/womens">
@@ -241,10 +241,10 @@ export default function Home() {
 
           <Box w="100%" position="relative">
             <Image
-              loading="lazy"
               w="100%"
               src="https://static.nike.com/a/images/w_960,c_limit,f_auto/816f1a78-b1bb-4b3d-bca9-86cddb46e963/air-jordan-1-low-x-travis-scott-#ffffff-phantom-dm7866-001-release-date.jpg"
               alt="shoes"
+              loading="lazy"
             />
             <Box position="absolute" bottom="8" left="10">
               <Link to="/shoes">

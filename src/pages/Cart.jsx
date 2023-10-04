@@ -60,6 +60,7 @@ const Cart = () => {
               <Image
                 src="https://secure-images.nike.com/is/image/DotCom/DV2113_100?v=4b167ff06f5335d61363aee663c3161c"
                 alt="product_img"
+                loading="lazy"
               />
             </Box>
 
@@ -85,6 +86,7 @@ const Cart = () => {
                   w="6"
                   src="https://cdn-icons-png.flaticon.com/512/4387/4387288.png"
                   alt="delete"
+                  loading="lazy"
                 />
               </Box>
             </Box>

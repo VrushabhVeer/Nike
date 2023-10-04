@@ -33,7 +33,7 @@ const Error = () => {
           </Button>
         </Link>
         <Flex justifyContent="center" alignItems="center">
-          <Image w={{ base: "100%", md: "70%" }} src={nike} alt="nike" loading="lazy"/>
+          <Image w={{ base: "100%", md: "70%" }} src={nike} alt="nike_logo" loading="lazy"/>
         </Flex>
       </Box>
     </>

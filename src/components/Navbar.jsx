@@ -30,13 +30,13 @@ export default function Navbar() {
         <Image w="5" src={jordan} alt="jordan" loading="lazy"/>
         <Flex alignItems="center" gap="3" fontSize="13px">
           <Link to="/signin">
-            <Text>Sign In </Text>
+            <Text fontWeight="500">Sign In </Text>
           </Link>
           |<Text>Join Us</Text>|<i className="fa-solid fa-location-dot"></i>
           <Text>India</Text>
         </Flex>
       </Flex>
-      <Box px={{ base: "5", md: "12" }}>
+      <Box px={{ base: "5", md: "12" }} position="sticky" top="0" zIndex="999" bg="#fcfcfc">
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}

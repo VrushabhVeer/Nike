@@ -22,7 +22,7 @@ export default function Navbar2() {
         px={{ base: "5", md: "12" }}
         position="sticky"
         top="0"
-        bg="white"
+        bg="#fcfcfc"
         w="100%"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>

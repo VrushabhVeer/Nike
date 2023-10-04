@@ -74,7 +74,7 @@ const Payment = () => {
                 <Box w="100%">
                   <Image
                     src="https://secure-images.nike.com/is/image/DotCom/DV2113_100?v=4b167ff06f5335d61363aee663c3161c"
-                    alt=""
+                    alt="product_img"
                     loading="lazy"
                   />
                 </Box>
@@ -238,7 +238,7 @@ const Payment = () => {
               <Box w="100%">
                 <Image
                   src="https://secure-images.nike.com/is/image/DotCom/DV2113_100?v=4b167ff06f5335d61363aee663c3161c"
-                  alt=""
+                  alt="product_img"
                   loading="lazy"
                 />
               </Box>
