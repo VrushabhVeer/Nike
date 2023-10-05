@@ -4,6 +4,7 @@
 The Nike project is a web application built for online shopping, with a focus on sports and athletic products. It provides a user-friendly interface for customers to browse and purchase Nike products. This README provides an overview of the project and how to get started.
 
 - **Frontend GitHub Repository:** [GitHub Link](https://github.com/VrushabhVeer/Nike)
+- **Backend Github Repository:** [Github Link](https://github.com/VrushabhVeer/nike-db)
 - **Deployed Application:** [Vercel Link](https://nike-shopping.vercel.app)
 
 ## Frontend Technologies
