@@ -44,3 +44,7 @@ To run this project locally or contribute, follow these steps:
 ## Preview
 
 ![nike](https://github.com/VrushabhVeer/Nike/assets/99570200/0222e5e2-2d4a-476f-aa8d-2b8d8c4e80c5)
+
+| Product details        | Cart Page              |
+| ---------------------- | ---------------------- |
+|![nike1](https://github.com/VrushabhVeer/Nike/assets/99570200/6c3f8f63-2ad5-4381-8fbc-c2336ce3bad3)|![Screenshot](https://github.com/VrushabhVeer/Nike/assets/99570200/ea0aaa76-f020-4bd9-ba8f-122c4ead97f7)|
