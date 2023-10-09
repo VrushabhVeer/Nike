@@ -24,6 +24,7 @@ export default function Navbar2() {
         top="0"
         bg="#fcfcfc"
         w="100%"
+        zIndex="999"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -38,7 +39,7 @@ export default function Navbar2() {
           <HStack spacing={8} alignItems={"center"}>
             <Box>
               <Link to="/">
-                <Image w="63px" src={logo} alt="logo" loading="lazy"/>
+                <Image w="63px" src={logo} alt="logo" loading="lazy" />
               </Link>
             </Box>
           </HStack>
@@ -56,12 +57,15 @@ export default function Navbar2() {
             </Link>
           </HStack>
           <Flex alignItems={"center"} fontSize="18px" gap="6">
-            <Image
-              w="5"
-              src="https://cdn-icons-png.flaticon.com/512/151/151910.png"
-              alt="heart"
-              loading="lazy"
-            />
+            <Link to="/wishlist">
+              <Image
+                w="5"
+                src="https://cdn-icons-png.flaticon.com/512/151/151910.png"
+                alt="heart"
+                loading="lazy"
+              />
+            </Link>
+
             <Link to="/cart">
               <Image
                 w="5"

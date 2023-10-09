@@ -1,23 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import Navbar2 from '../components/Navbar2'
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import Navbar2 from "../components/Navbar2";
+import axios from "axios";
 import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import Loading from '../components/Loading';
+import Loading from "../components/Loading";
+import { Link } from "react-router-dom";
 
 const Womens = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get("https://nike-f15h.onrender.com/women")
-        .then((res) => {
-            setData(res.data);
-            setLoading(false);
-            console.log(res);
-        }).catch((err) => {
-            setLoading(false);
-            console.log(err);
-        })
+        axios
+            .get("http://localhost:8000/products/womens")
+            .then((res) => {
+                setData(res.data);
+                setLoading(false);
+                console.log(res);
+            })
+            .catch((err) => {
+                setLoading(false);
+                console.log(err);
+            });
     }, []);
 
     if (loading) {
@@ -35,26 +38,31 @@ const Womens = () => {
                 <SimpleGrid columns={[1, 2, 3, 4]} rowGap="14" columnGap="7">
                     {data.map((item, index) => (
                         <Box key={index}>
-                            <Box>
-                                <Image src={item.img1} alt="product_img" loading="lazy"/>
-                            </Box>
-
+                            <Link to={`/women/${item._id}`}>
+                                <Box>
+                                    <Image src={item.img1} alt="product_img" loading="lazy" />
+                                </Box>
+                            </Link>
                             <Box mt="3">
-                                <Text color="red">{item.type}</Text>
-                                <Text mt="2" color="#7b8287" fontSize="18px">
+                                <Text color="red" fontSize="15px">
+                                    {item.type}
+                                </Text>
+                                <Text mt="2" fontWeight="500">
                                     {item.title}
                                 </Text>
-                                <Text mt="2">
+                                <Text mt="1" color="#7b8287" fontSize="15px">
                                     {item.title2}
                                 </Text>
-                                <Text mt="2">MRP : ₹ {item.price}</Text>
+                                <Text mt="2" fontWeight="500">
+                                    MRP : ₹ {item.price}
+                                </Text>
                             </Box>
                         </Box>
                     ))}
                 </SimpleGrid>
             </Box>
         </>
-    )
-}
+    );
+};
 
-export default Womens
+export default Womens;

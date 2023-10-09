@@ -27,7 +27,7 @@ export default function Navbar() {
         bg="#f5f5f5"
         justifyContent="space-between"
       >
-        <Image w="5" src={jordan} alt="jordan" loading="lazy"/>
+        <Image w="5" src={jordan} alt="jordan" loading="lazy" />
         <Flex alignItems="center" gap="3" fontSize="13px">
           <Link to="/signin">
             <Text fontWeight="500">Sign In </Text>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <HStack spacing={8} alignItems={"center"}>
             <Box>
               <Link to="/">
-                <Image w="63px" src={logo} alt="logo" loading="lazy"/>
+                <Image w="63px" src={logo} alt="logo" loading="lazy" />
               </Link>
             </Box>
           </HStack>
@@ -68,12 +68,15 @@ export default function Navbar() {
             </Link>
           </HStack>
           <Flex alignItems={"center"} fontSize="18px" gap="6">
-            <Image
-              w="5"
-              src="https://cdn-icons-png.flaticon.com/512/151/151910.png"
-              alt="heart"
-              loading="lazy"
-            />
+            <Link to="/wishlist">
+              <Image
+                w="5"
+                src="https://cdn-icons-png.flaticon.com/512/151/151910.png"
+                alt="heart"
+                loading="lazy"
+              />
+            </Link>
+
             <Link to="/cart">
               <Image
                 w="5"
