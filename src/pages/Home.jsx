@@ -187,7 +187,7 @@ export default function Home() {
 
       {/* men women shoes */}
 
-      <Box w="90%" m="auto" mt="20">
+      <Box w="90%" m="auto" mt="20" mb="20">
         <Text fontSize="20" fontWeight="500">
           More From Nike
         </Text>

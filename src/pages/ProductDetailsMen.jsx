@@ -23,9 +23,10 @@ const ProductDetailsMen = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/products/men/${params.productId}`)
+      .get(`https://nike-f15h.onrender.com/men/${params.productId}`)
       .then((response) => {
         setData(response.data);
+        console.log('data', response.data);
       })
       .catch((error) => {
         console.error(error);

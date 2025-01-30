@@ -21,7 +21,7 @@ const ProductDetailsWomen = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/products/women/${params.productId}`)
+      .get(`https://nike-f15h.onrender.com/women/${params.productId}`)
       .then((response) => {
         setData(response.data);
         console.log(response.data);
@@ -220,7 +220,7 @@ const ProductDetailsWomen = () => {
                 2XL
               </Button>
             </HStack>
-            <Text color="" mt="2" fontSize="15px">
+            <Text color="red" mt="2" fontSize="15px">
               {!size ? (
                 <>
                   <i className="fa-solid fa-circle-exclamation" /> Please Select
