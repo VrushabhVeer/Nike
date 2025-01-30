@@ -11,10 +11,11 @@ const Mens = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/products/mens")
+      .get("https://nike-f15h.onrender.com/men")
       .then((res) => {
         setData(res.data);
         setLoading(false);
+        console.log("first----", res.data);
       })
       .catch((err) => {
         setLoading(false);
@@ -38,7 +39,7 @@ const Mens = () => {
         <SimpleGrid columns={[1, 2, 3, 4]} rowGap="14" columnGap="7">
           {data.map((item) => (
             <Box key={item.id}>
-              <Link to={`/men/${item._id}`}>
+              <Link to={`/men/${item.id}`}>
                 <Box>
                   <Image src={item.img1} alt="product_img" loading="lazy" />
                 </Box>

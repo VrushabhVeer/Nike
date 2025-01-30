@@ -23,7 +23,7 @@ const ProductDetailsShoe = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/products/shoe/${params.productId}`)
+      .get(`https://nike-f15h.onrender.com/shoes/${params.productId}`)
       .then((response) => {
         setData(response.data);
         console.log(response.data);

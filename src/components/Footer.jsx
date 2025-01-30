@@ -1,8 +1,10 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <Box w="100%" bg="#111111" mt="20" color="#FFFFFF">
+    <Box w="100%" bg="#111111" mt="1px" color="#FFFFFF">
       <SimpleGrid
         w="80%"
         m="auto"
@@ -83,7 +85,7 @@ export default function Footer() {
         borderTop="1px solid #7E7E7E"
       >
         <Text fontSize="14px" color={"#7E7E7E"} _hover={{ color: "#FFFFFF" }}>
-          © 2023. Made By Vrushabh Veer
+          © {year}. Made By Vrushabh Veer
         </Text>
       </Box>
     </Box>
